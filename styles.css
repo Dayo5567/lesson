@@ -1,91 +1,452 @@
-/* this removes all the space around the page*/
-*{
+* {
     margin: 0;
     padding: 0;
 }
-/* styling our header element*/
-header{
+header {
     height: 100px;
     background-color: aliceblue;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    margin-bottom: 8px;
 }
-
-/* applying flex to the lists in the header */
 ul {
     display: flex;
     list-style-type: none;
     align-items: center;
 }
-
 ul li a {
-    padding: 0 20px;
+    padding: 0 25px;
     text-decoration: none;
-    color: red;
+    color: black;
     display: inline-block;
 }
-
-li a ::after {
-    content: "";
+.logo img{
     display: block;
-    height: 4px;
-    width: 0;
-    background-color: blue;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    width: 90px;
 }
-
-li a:hover::after {
-    color: green;
-    width: 100%;
-}
-
-/* styling the main element */
-main {
-    margin: 30px o;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.content-left {
-    width: 30%;
-    margin: 0 20px;
-}
-main h1 {
-    font-size: 25px;
-    color: blue;
-    text-transform: uppercase;
-    line-height: 2em;
-}
-main h2 {
-    font-size: 25px;
-    letter-spacing: 8px;
-    font-weight: 800px;
-    text-transform: uppercase;
-}
-
-main p {
-    font-size: 14px;
-    line-height: 2em;
-    margin: 30px 0;
-}
-
-.cta {
-    padding: 15px 30px;
-    background-color: cadetblue;
-    color: white;
-    border: none;
-    border-radius: 30px;
-}
-
 .hero-img {
     max-width: 670px;
     height: auto;
 }
-.signup-btn {
-    padding: 10px 20px;
-    background-color: cadetblue;
-    color: white;
-    border: none;
-    border-radius: 30px;
+
+.firstsectionbody{
+    position: relative;
+    max-width: 100vw;
+    height: auto;
 }
+
+.section1 {
+    background-image: url(images/jpeg4.jpg);
+    background-position: left;
+    height: 400px;
+    max-width: 100vw;
+    margin: auto;
+    
+}
+
+.firstsectionbody h1 {
+    font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+
+}
+
+.section1para h1{
+    max-width: 400px;
+    height: auto;
+    font-weight:normal;
+    font-weight: bold;
+    font-size: 33px;
+
+}
+.section1para h1{
+    max-width: 400px;
+    height: auto;
+    font-weight:normal;
+    font-weight: bold;
+    font-size: 33px;
+
+}
+
+.section1para p{
+    font-size: 20px;
+
+}
+
+.section1para{
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 45px;
+    box-shadow: 3px 3px 15px #b6b6b68c;
+    
+}
+.section2{
+    position: absolute;
+    left: 30px;
+    margin-top: 15px;
+}
+
+.section2 p{
+    font-size: 20px;
+}
+
+.courseselect ul{
+    display: flex;
+    padding-left: 0px;
+}
+
+.courseselect ul a{
+    
+    list-style: none;
+    text-decoration: none;
+    padding-right: 20px;
+    color: rgb(100, 98, 98);
+    font-weight: bold;
+    font-size: 18px;
+}
+.courseselect ul a:active{
+    color: black;
+}
+
+.courseselect ul a:hover{
+    color: black;
+}
+
+.section3{
+    position: relative;
+    top: 120px;
+    border: solid 0.5px rgb(201, 201, 201);
+    width: 95%;
+    margin: auto;
+    height: 650px;
+    margin-bottom: 300px;
+    
+}
+
+.section3intro{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 33px;
+    
+}
+.section3intro h1{
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+
+}
+
+.section3intro p{
+    font-size: 17px;
+    line-height: 20px;
+    width: 700px;
+}
+.section3intro button{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    color: black;
+    border: solid 1px rgb(90, 88, 88);
+    cursor: pointer;
+    }
+    
+    .slide1 img{
+        width: 230px;
+        border: solid 0.5px rgb(2, 2, 2);
+    }
+    
+    .slide1 img:hover{
+        opacity: 0.7;
+        transition: 0.3s ease;
+    
+    }
+    
+    span{
+        color: rgb(158, 94, 10);
+    }
+
+.slide1:hover{
+    cursor: pointer;
+
+
+}
+
+.slide1 h1{
+    font-size: 15px;
+    width: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-bottom: 0px;
+
+}
+
+.starandcost {
+    font-size: 13px;
+    padding-bottom: 2px;
+    line-height: 25px;
+}
+
+.cost{
+    font-weight: bold;
+
+}
+
+.starandcost img{
+width: 45px;
+object-fit: cover;
+height: 10px;
+}
+s{
+    font-size: 13px;
+    color: grey;
+}
+
+.coursetrainer{
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.coursesslides{
+    width: 98%;
+    display: flex;
+    padding-right: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.coursesslides::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll1{
+    position: absolute;
+    width: 25px;
+    right: 0px;
+    top: 50%;
+    background-color: whitesmoke;
+    border: solid 1px grey;
+    padding: 10px;
+    border-radius: 50px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.scroll2{
+    position: absolute;
+    transform: rotate(180deg);
+    width: 25px;
+    left: 0px;
+    top: 50%;
+    top: 50%;
+    background-color: whitesmoke;
+    border: solid 1px grey;
+    padding: 10px;
+    border-radius: 50px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.presection3{
+    padding-left: 30px;
+}
+
+.slideone{
+    position: relative;
+
+}
+
+.dropdown1{
+    display: none;
+    width: 300px;
+    padding: 20px;
+    top: -60px;
+    position: absolute;
+    left: 240px;
+    background-color: white;
+    border: solid 0.5px rgb(209, 202, 202);
+
+}
+
+.dropdown1 span{
+    color: rgb(75, 163, 75);
+
+}
+
+.dropdown1 h1{
+    font-size: 20px;
+}
+
+.dropdown1  button{
+    background-color: rgb(148, 53, 148);
+    padding: 5px 10px;
+    display: flex;
+    height: 40px;
+    width: 210px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.dropdown1 button:hover{
+    opacity: 0.8;
+}
+
+.buttonandheart{
+    display: flex;
+}
+.buttonandheart img{
+    width: 20px;
+    border: solid 0.5px black;
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.slideone:hover .dropdown1{
+    display: block;
+
+    
+}
+
+.textandtick img{
+    width: 10px;
+    object-fit: contain;
+}
+
+
+
+.dropdown2{
+    display: none;
+    position: absolute;
+    left: 520px;
+    top: 95px;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: solid 0.5px rgb(209, 202, 202);
+}
+
+
+.dropdown2 span{
+    color: rgb(75, 163, 75);
+
+}
+
+.dropdown2 h1{
+    font-size: 20px;
+}
+
+.dropdown2 button{
+    background-color: rgb(148, 53, 148);
+    padding: 5px 10px;
+    display: block;
+    height: 40px;
+    width: 210px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.dropdown2 button:hover{
+    opacity: 0.8;
+}
+
+.slidetwo:hover .dropdown2{
+    display: block;
+    
+}
+.section3intro h1{
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+
+}
+
+.section3intro p{
+    font-size: 17px;
+    line-height: 20px;
+    width: 700px;
+    
+}
+
+.section3intro button{
+padding: 10px;
+font-size: 14px;
+font-weight: bold;
+background-color: transparent;
+color: black;
+border: solid 1px rgb(90, 88, 88);
+cursor: pointer;
+}
+
+.slide1 img{
+    width: 230px;
+    border: solid 0.5px rgb(2, 2, 2);
+}
+
+.slide1 img:hover{
+    opacity: 0.7;
+    transition: 0.3s ease;
+
+}
+
+span{
+    color: rgb(158, 94, 10);
+}
+.slide1{
+    display: block;
+    padding-top: 20px;
+    padding-right: 17px;
+}
+.dropdown3{
+    display: none;
+    position: absolute;
+    left: 770px;
+    top: 95px;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: solid 0.5px rgb(209, 202, 202);
+}
+
+.dropdown3 span{
+    color: rgb(75, 163, 75);
+
+}
+
+.dropdown3 h1{
+    font-size: 20px;
+}
+
+.dropdown3 button{
+    background-color: rgb(148, 53, 148);
+    padding: 5px 10px;
+    display: block;
+    height: 40px;
+    width: 210px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.dropdown3 button:hover{
+    opacity: 0.8;
+}
+
+.slidethree:hover .dropdown3{
+    display: block;
+    
+}
+
